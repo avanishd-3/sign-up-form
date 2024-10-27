@@ -122,6 +122,27 @@ input:focus {
     border-color: rgba(255, 0, 0, 0.685);
 }
 
+/* Styling for toggle password visibility button */
+.toggle-password-visibility {
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* Adds consistent spacing between elements */
+    margin-top: 5px;
+}
+
+.right-side .toggle-password-visibility p {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;  /* Removes default paragraph margin */
+}
+
+.toggle-password-visibility .show-password {
+    width: 20px;
+    height: 20px;
+    margin: 0;  /* Removes default input margin */
+    cursor: pointer;
+}
+
 /* Styling for the button */
 .create-account-btn {
     background-color: #596D48; /* Green background */

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up-form</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="./build/script.js" defer></script>
 </head>
 <body>
     <div class="left-side">
@@ -44,7 +45,7 @@
 
                     <div class="input-field">
                         <label for="phone-number">Phone Number</label>
-                        <input type="tel id=phone-number" name="phone-number" placeholder="101-101-1234" required>
+                        <input type="tel" id=phone-number name="phone-number" placeholder="101-101-1234" required>
                     </div>
                 </div>
             </fieldset>
@@ -60,18 +61,20 @@
                     <div class="input-field">
                         <label for="confirm-password">Confirm Password</label>
                         <input type="password" id="confirm-password" name="confirm-password" class="password-input" required>
-                    </div>
+                    </div>   
                 </div>
+
+                <div class="toggle-password-visibility">
+                    <p>Show password</p>
+                    <input type="checkbox" onclick="showPassword()" class="show-password">
+                </div>
+                
             </fieldset>
         </form>
 
         <button type="button" class="create-account-btn">Create Account</button>
 
         <p class="log-in">Already have an account? <a href="">Log in</p>
-
-
-
-
     </div>
     
     
