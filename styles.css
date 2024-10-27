@@ -141,6 +141,7 @@ input:focus {
     height: 20px;
     margin: 0;  /* Removes default input margin */
     cursor: pointer;
+    box-shadow: none;
 }
 
 /* Styling for the button */
