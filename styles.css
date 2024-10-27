@@ -53,13 +53,18 @@ form {
 /* Flexbox layout for row of inputs */
 .input-row {
     display: flex;
-    justify-content: space-between;
     gap: 20px;
     margin-bottom: 20px;
 }
 
+/* Styling for singular inputs */
+
 .input-row input {
     flex: 1;
+}
+
+.input-field {
+    margin-right: 25px;
 }
 
 /* Styling for fieldsets */
@@ -87,6 +92,7 @@ input {
     border-radius: 4px;
     font-size: 14px;
     margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 input:focus {
