@@ -1,35 +1,122 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 body {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
 }
 
+/* Left-side styling */
 .left-side {
-    display: flex;
-    flex-direction: column;
+    flex: 1;
     background-image: url("./img/green_leaf_plant.jpg");
-    min-width: fit-content;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+    color: white;
 }
 
-/* Styling for button */
+/* Right-side styling */
+.right-side {
+    flex: 1;
+    background-color: white;
+    padding: 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.right-side p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.right-side em {
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 2px 2px;
+}
+
+ /* Invalid passwords should be red */
+
+.password-input:invalid {
+   border-color: rgba(255, 0, 0, 0.685);
+}
+
+/* Styling for the button */
 .create-account-btn {
     background-color: #596D48; /* Green background */
-    color: white; /* White text */
-    padding: 15px 20px; /* Padding */
-    font-size: 16px; /* Font size */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition */
+    color: white;
+    padding: 15px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
 }
 
 .create-account-btn:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #4b5c3e; /* Slightly darker green on hover */
+}
+
+/* Styling for log in */
+.log-in {
+    margin-top: 25px;
+}
+
+/* Styling for "Log in" link */
+.right-side p a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.right-side p a:hover {
+    text-decoration: underline;
 }
