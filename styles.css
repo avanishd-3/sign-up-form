@@ -37,17 +37,25 @@ body {
 }
 
 .right-side p {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 20px;
+    font-weight: 550;
 }
 
 .right-side em {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 form {
     display: flex;
     flex-direction: column;
+}
+
+/* Layout for text on top of the right side */
+
+.right-side .end-of-sign-up-pitch {
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 /* Flexbox layout for row of inputs */
@@ -75,14 +83,23 @@ fieldset {
 }
 
 legend {
-    font-weight: bold;
-    margin-bottom: 10px;
+    /* font-weight: bold;
+    margin-bottom: 10px; */
+
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 14px; 
 }
 
 input {
@@ -124,8 +141,10 @@ input:focus {
 }
 
 /* Styling for log in */
-.log-in {
+.right-side .log-in {
     margin-top: 25px;
+    font-size: 18px;
+    font-weight: normal;
 }
 
 /* Styling for "Log in" link */
