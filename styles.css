@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./img/green_leaf_plant.jpg");
+    min-width: fit-content;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Styling for button */
+
+.create-account-btn {
+    background-color: #596D48; /* Green background */
+    color: white; /* White text */
+    padding: 15px 20px; /* Padding */
+    font-size: 16px; /* Font size */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.create-account-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

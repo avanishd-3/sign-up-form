@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up-form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="left-side">
+        <p></p>
+    </div>
+
+    <div class="right-side">
+        <p>This is not a real online service!
+           You know you need something like this in your life to help you realize your deepest dreams.
+           Sign up <em>now</em> to get started.
+        </p>
+
+        <p>You <em>know</em> you want to.</p>
+
+        <p>Let's do this!</p>
+
+        <form action="" method="post">
+            <fieldset>
+                <legend>Contact information</legend>
+
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Passwords</legend>
+
+                <label for="password">Password</label>
+                <input type="text" id="password" name="password" required>
+
+                <label for="confirm-password">Confirm Password</label>
+                <input type="text" id="confirm-password" name="confirm-password" required>
+            </fieldset>
+        </form>
+
+        <button type="button" class="create-account-btn">Create Account</button>
+
+        <p>Already have an account? <link href="">Log in</p>
+
+
+
+
+    </div>
+    
+    
+</body>
+</html>
