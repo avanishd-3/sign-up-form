@@ -24,24 +24,32 @@
             <fieldset>
                 <legend>Contact information</legend>
 
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name" name="first-name" required>
+                <div class="input-row">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
 
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name" required>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <div class="input-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel id=phone-number" name="phone-number" placeholder="101-101-1234" required>
+                </div>
             </fieldset>
 
             <fieldset>
                 <legend>Passwords</legend>
+                <div class="input-row">
+                    <label for="password">Password</label>
+                    <input type="text" id="password" name="password" class="password-input" required>
 
-                <label for="password">Password</label>
-                <input type="text" id="password" name="password" class="password-input" required>
-
-                <label for="confirm-password">Confirm Password</label>
-                <input type="text" id="confirm-password" name="confirm-password" class="password-input" required>
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="text" id="confirm-password" name="confirm-password" class="password-input" required>
+                </div>
             </fieldset>
         </form>
 
