@@ -72,6 +72,7 @@ form {
 }
 
 .input-field {
+    position: relative;
     margin-right: 25px;
 }
 
@@ -117,6 +118,19 @@ input:focus {
     box-shadow: 2px 2px;
 }
 
+/* Password styling */
+.password-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.input-field .password-input {
+    box-shadow: none;
+    padding-right: 40px;
+}
+
 /* Invalid passwords should be red */
 .password-input:invalid {
     border-color: rgba(255, 0, 0, 0.685);
@@ -133,25 +147,19 @@ input:focus {
 
 /* Styling for toggle password visibility button */
 .toggle-password-visibility {
-    display: flex;
-    align-items: center;
-    gap: 10px;  /* Adds consistent spacing between elements */
-    margin-top: 5px;
-}
-
-.right-side .toggle-password-visibility p {
-    font-size: 16px;
-    font-weight: normal;
-    margin: 0;  /* Removes default paragraph margin */
-}
-
-.toggle-password-visibility .show-password {
-    width: 20px;
-    height: 20px;
-    margin: 0;  /* Removes default input margin */
+    position: absolute;
+    right: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
-    box-shadow: none;
+    color: #555; /* Optional: set color */
+    font-size: 24px; /* Adjust icon size if necessary */
 }
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
 
 /* Styling for the button */
 .create-account-btn {
@@ -163,7 +171,6 @@ input:focus {
     border-radius: 10px;
     cursor: pointer;
     width: 50%;
-    margin-top: 20px;
     transition: background-color 0.3s;
 }
 

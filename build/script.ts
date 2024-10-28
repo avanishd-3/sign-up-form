@@ -1,18 +1,21 @@
-function showPassword(): void {
+function togglePasswordVisibility(): void {
     let passwordInput: null | HTMLInputElement = document.getElementById("password") as HTMLInputElement;
     let confirmPasswordInput: null | HTMLInputElement = document.getElementById("confirm-password") as HTMLInputElement;
 
-    if (passwordInput.type === "password") {
-        passwordInput.type = "text";
-    } else {
-      passwordInput.type = "password";
-    }
+    let toggleIcon: null | HTMLOrSVGImageElement = document.getElementById("toggle-icon") as HTMLOrSVGImageElement | null;
 
-    if (confirmPasswordInput.type === "password") {
-      confirmPasswordInput.type = "text";
-  } else {
-    confirmPasswordInput.type = "password";
-  }
+    if (passwordInput && toggleIcon) {
+      if(passwordInput.type === "password") {
+        passwordInput.type = "text";
+        confirmPasswordInput.type = "text";
+        toggleIcon.textContent = "visibility";
+      }
+      else {
+        passwordInput.type = "password";
+        confirmPasswordInput.type = "password";
+        toggleIcon.textContent = "visibility_off";
+      }
+    }
   } 
 
 

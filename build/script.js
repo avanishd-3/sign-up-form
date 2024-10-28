@@ -1,17 +1,18 @@
-function showPassword() {
+function togglePasswordVisibility() {
     var passwordInput = document.getElementById("password");
     var confirmPasswordInput = document.getElementById("confirm-password");
-    if (passwordInput.type === "password") {
-        passwordInput.type = "text";
-    }
-    else {
-        passwordInput.type = "password";
-    }
-    if (confirmPasswordInput.type === "password") {
-        confirmPasswordInput.type = "text";
-    }
-    else {
-        confirmPasswordInput.type = "password";
+    var toggleIcon = document.getElementById("toggle-icon");
+    if (passwordInput && toggleIcon) {
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            confirmPasswordInput.type = "text";
+            toggleIcon.textContent = "visibility";
+        }
+        else {
+            passwordInput.type = "password";
+            confirmPasswordInput.type = "password";
+            toggleIcon.textContent = "visibility_off";
+        }
     }
 }
 function addHyphentoPhoneNumber() {
