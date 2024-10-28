@@ -29,5 +29,16 @@ function addHyphentoPhoneNumber() {
         event.target.value = formattedPhoneNumber;
     });
 }
+function validatePasswordEqualsConfirmPassword() {
+    var passwordInput = document.getElementById("password");
+    var confirmPasswordInput = document.getElementById("confirm-password");
+    var passwordValidationWarning = document.getElementById("password-matching-warning");
+    if ((passwordInput === null || passwordInput === void 0 ? void 0 : passwordInput.value) === (confirmPasswordInput === null || confirmPasswordInput === void 0 ? void 0 : confirmPasswordInput.value)) {
+        passwordValidationWarning.textContent = "";
+    }
+    else {
+        passwordValidationWarning.textContent = "*Passwords do not match";
+    }
+}
 // Main
 addHyphentoPhoneNumber();

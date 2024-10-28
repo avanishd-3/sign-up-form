@@ -122,6 +122,15 @@ input:focus {
     border-color: rgba(255, 0, 0, 0.685);
 }
 
+/* Styling for password not equaling confirm password should be small and red */
+
+.right-side #password-matching-warning {
+    color: rgba(255, 0, 0, 0.685);
+    font-size: 12px;
+    margin-top: 0px;
+
+}
+
 /* Styling for toggle password visibility button */
 .toggle-password-visibility {
     display: flex;

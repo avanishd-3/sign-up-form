@@ -32,6 +32,20 @@ function showPassword() {
     });
   }
 
+  function validatePasswordEqualsConfirmPassword() {
+    let passwordInput: null | HTMLInputElement = document.getElementById("password") as null | HTMLInputElement;
+    let confirmPasswordInput: null | HTMLInputElement = document.getElementById("confirm-password") as null | HTMLInputElement;
+
+    let passwordValidationWarning: null | HTMLParagraphElement = document.getElementById("password-matching-warning") as HTMLParagraphElement;
+
+
+    if (passwordInput?.value === confirmPasswordInput?.value) {
+      passwordValidationWarning.textContent = "";
+    }
+    else {
+      passwordValidationWarning.textContent = "*Passwords do not match";
+    }
+  }
+
   // Main
   addHyphentoPhoneNumber();
-  

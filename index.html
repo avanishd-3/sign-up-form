@@ -56,11 +56,13 @@
                     <div class="input-field">
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" class="password-input" required maxlength="10">
+                        <p id="password-matching-warning"></p>
                     </div>
 
                     <div class="input-field">
                         <label for="confirm-password">Confirm Password</label>
-                        <input type="password" id="confirm-password" name="confirm-password" class="password-input" required>
+                        <input type="password" id="confirm-password" name="confirm-password" class="password-input" required 
+                               onblur="validatePasswordEqualsConfirmPassword()">
                     </div>   
                 </div>
 
