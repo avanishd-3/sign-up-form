@@ -1,3 +1,5 @@
+/* Styling for generic elements */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +13,33 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f3f3f3;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 550;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 550;
+}
+
+em {
+    font-weight: 500;
+}
+
+/* Styling for "Log in" link */
+a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Left-side styling */
@@ -36,44 +65,21 @@ body {
     justify-content: center;
 }
 
-.right-side p {
-    font-size: 20px;
-    margin-bottom: 20px;
-    font-weight: 550;
-}
-
-.right-side em {
-    font-weight: 500;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
 /* Layout for text on top of the right side */
+
+.right-side .sign-up-text-container {
+    max-width: 625px;
+}
 
 .right-side .end-of-sign-up-pitch {
     margin-top: 25px;
     margin-bottom: 20px;
 }
 
-/* Flexbox layout for row of inputs */
-.input-row {
+/* Form styling */
+form {
     display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-/* Styling for singular inputs */
-
-.input-row input {
-    flex: 1;
-}
-
-.input-field {
-    position: relative;
-    margin-right: 25px;
+    flex-direction: column;
 }
 
 /* Styling for fieldsets */
@@ -117,6 +123,26 @@ input:focus {
     border-color: blue;
     box-shadow: 2px 2px;
 }
+
+/* Flexbox layout for row of inputs */
+.input-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styling for singular inputs */
+
+.input-row input {
+    flex: 1;
+}
+
+.input-field {
+    position: relative;
+    margin-right: 25px;
+}
+
+
 
 /* Password styling */
 .password-wrapper {
@@ -185,13 +211,4 @@ input:focus {
     font-weight: normal;
 }
 
-/* Styling for "Log in" link */
-.right-side p a {
-    color: #596D48;
-    text-decoration: none;
-    font-weight: bold;
-}
 
-.right-side p a:hover {
-    text-decoration: underline;
-}
