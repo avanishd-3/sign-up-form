@@ -44,6 +44,9 @@ a:hover {
 
 /* Left-side styling */
 .left-side {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     flex: 1;
     background-image: url("./img/green_leaf_plant.jpg");
     background-position: center;
@@ -52,6 +55,17 @@ a:hover {
     position: relative;
     min-height: 100vh;
     color: white;
+}
+
+.photo-attribution {
+    font-size: 14px;
+    color: lightgray; /* Subtle color for the attribution */
+    text-align: left;
+}
+
+.photo-attribution a {
+    color: lightgray;
+    text-decoration: underline;
 }
 
 /* Right-side styling */
