@@ -15,4 +15,23 @@ function showPassword() {
   }
   } 
 
+
+  function addHyphentoPhoneNumber() {
+    document.getElementById("phone-number")?.addEventListener("input", (event: Event) => {
+      let phoneNumber: string = (event.target as HTMLInputElement).value.replace(/-/g, '').replace(/\D/g, ''); // Remove existing hyphens and non-numeric characters
+
+      // Add hyphens every 3 characters
+      let formattedPhoneNumber = "";
+      for (let i = 0; i < phoneNumber.length; ++i) {
+        if (i === 3 || i === 6) {
+          formattedPhoneNumber += "-";
+        }
+        formattedPhoneNumber += phoneNumber[i];
+      }
+      (event.target as HTMLInputElement).value = formattedPhoneNumber;
+    });
+  }
+
+  // Main
+  addHyphentoPhoneNumber();
   
