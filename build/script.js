@@ -17,7 +17,8 @@ function showPassword() {
 function addHyphentoPhoneNumber() {
     var _a;
     (_a = document.getElementById("phone-number")) === null || _a === void 0 ? void 0 : _a.addEventListener("input", function (event) {
-        var phoneNumber = event.target.value.replace(/-/g, '').replace(/\D/g, ''); // Remove existing hyphens and non-numeric characters
+        var phoneNumber = event.target.value.replace(/-/g, '').replace(/\D/g, '');
+        // Remove existing hyphens and non-numeric characters
         // Add hyphens every 3 characters
         var formattedPhoneNumber = "";
         for (var i = 0; i < phoneNumber.length; ++i) {
