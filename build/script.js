@@ -1,6 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.validatePasswordEqualsConfirmPassword = validatePasswordEqualsConfirmPassword;
 function togglePasswordVisibility() {
     var passwordInput = document.getElementById("password");
     var confirmPasswordInput = document.getElementById("confirm-password");

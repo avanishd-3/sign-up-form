@@ -35,7 +35,7 @@ function addHyphentoPhoneNumber(): void {
   });
 }
 
-export function validatePasswordEqualsConfirmPassword(): void {
+function validatePasswordEqualsConfirmPassword(): void {
   let passwordInput: null | HTMLInputElement = document.getElementById("password") as null | HTMLInputElement;
   let confirmPasswordInput: null | HTMLInputElement = document.getElementById("confirm-password") as null | HTMLInputElement;
 
