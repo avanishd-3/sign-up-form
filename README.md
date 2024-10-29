@@ -2,8 +2,6 @@ Sign-up-form template with international telephone support.
 
 Written with Vanilla CSS and Typescript.
 
-Access at https://avanishd-3.github.io/sign-up-form-template/
-
 To modify the logic, edit the TS file (compiles to JS)
 
 Notes:
