@@ -1,4 +1,9 @@
-function togglePasswordVisibility(): void {
+// Imports
+import intlTelInput from "intl-tel-input";
+import "intl-tel-input/build/css/intlTelInput.css"
+
+
+export function togglePasswordVisibility(): void {
   let passwordInput: null | HTMLInputElement = document.getElementById("password") as HTMLInputElement;
   let confirmPasswordInput: null | HTMLInputElement = document.getElementById("confirm-password") as HTMLInputElement;
 
@@ -35,7 +40,7 @@ function addHyphentoPhoneNumber(): void {
   });
 }
 
-function validatePasswordEqualsConfirmPassword(): void {
+export function validatePasswordEqualsConfirmPassword(): void {
   let passwordInput: null | HTMLInputElement = document.getElementById("password") as null | HTMLInputElement;
   let confirmPasswordInput: null | HTMLInputElement = document.getElementById("confirm-password") as null | HTMLInputElement;
 
@@ -51,4 +56,14 @@ function validatePasswordEqualsConfirmPassword(): void {
 }
 
   // Main
-  addHyphentoPhoneNumber();
+addHyphentoPhoneNumber();
+
+document.addEventListener("DOMContentLoaded", function () {
+    const input: null | HTMLInputElement = document.querySelector("#phone-number") as HTMLInputElement;
+    if (input) {
+      intlTelInput(input, {
+        initialCountry: "us",
+        loadUtilsOnInit: "./node_modules/intl-tel-input/build/js/utils.js" // Correct path for utils.js
+        });
+    }
+  });
