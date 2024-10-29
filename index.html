@@ -8,9 +8,24 @@
     <!-- Material You icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 
-    <script src="./dist/main.js" defer></script>
+    <script src="./build/script.js" defer></script>
+
+    <!-- Using a CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.6.0/build/css/intlTelInput.css">
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.6.0/build/js/intlTelInput.min.js" defer></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+            const input = document.querySelector("#phone-number");
+            if (input) {
+                window.intlTelInput(input, {
+                    initialCountry: "us",
+                    loadUtilsOnInit: "./node_modules/intl-tel-input/build/js/utils.js" // Correct path for utils.js
+                });
+            }
+        });
+    </script>
     <!-- <script src="./node_modules/intl-tel-input/build/js/intlTelInput.js" defer></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {

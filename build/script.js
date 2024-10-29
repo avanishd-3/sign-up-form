@@ -1,10 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.togglePasswordVisibility = togglePasswordVisibility;
 exports.validatePasswordEqualsConfirmPassword = validatePasswordEqualsConfirmPassword;
-// Imports
-var intl_tel_input_1 = require("intl-tel-input");
-require("intl-tel-input/build/css/intlTelInput.css");
 function togglePasswordVisibility() {
     var passwordInput = document.getElementById("password");
     var confirmPasswordInput = document.getElementById("confirm-password");
@@ -51,12 +47,3 @@ function validatePasswordEqualsConfirmPassword() {
 }
 // Main
 addHyphentoPhoneNumber();
-document.addEventListener("DOMContentLoaded", function () {
-    var input = document.querySelector("#phone-number");
-    if (input) {
-        (0, intl_tel_input_1.default)(input, {
-            initialCountry: "us",
-            loadUtilsOnInit: "./node_modules/intl-tel-input/build/js/utils.js" // Correct path for utils.js
-        });
-    }
-});
