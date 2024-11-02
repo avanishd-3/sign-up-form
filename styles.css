@@ -8,9 +8,8 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 4fr 5fr;
     height: 100vh;
     background-color: #f3f3f3;
 }
@@ -44,23 +43,20 @@ a:hover {
 
 /* Left-side styling */
 .left-side {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex: 1;
+    display: grid;
     background-image: url("./img/green_leaf_plant.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
     min-height: 100vh;
     color: white;
+    justify-items: center;
 }
 
 .photo-attribution {
     font-size: 18px;
     color: lightgray; /* Subtle color for the attribution */
-    text-align: left;
+    align-self: end;
 }
 .photo-attribution a {
     color: lightgray;
@@ -223,5 +219,3 @@ input:focus {
     font-size: 18px;
     font-weight: normal;
 }
-
-
